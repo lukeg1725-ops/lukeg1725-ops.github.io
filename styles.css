@@ -1,0 +1,145 @@
+/* CSS Document */
+
+/* Reset default spacing so nav and h1 touch with no gap */
+html, body, h1, nav {
+    margin: 0;
+    padding: 0;
+}
+.headerpic {
+	background-image: url(juliaweddingfamilyed.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;
+}
+h1 {
+	display:flex;
+	align-items:end;
+	justify-content: center;
+	/* animate transform+padding (font-size keywords don't animate smoothly) */
+	transform-origin: center top;
+	transform: scale(1);
+	transition: padding 400ms ease, transform 400ms ease, background-position 400ms ease;
+	color:#eeeeee;
+	font-family:'Courier New', Courier, monospace;
+	font-size:xxx-large;
+	text-align: center;
+	height:470px;
+	-webkit-text-stroke:.8px #222222;
+	text-shadow: 3px 3px 6px #000000;
+}
+.mainheader {
+	padding-bottom:60px;
+}
+.secondheader {
+	background-color: #ffffff;
+	height: 180px;
+	
+}
+.secondh1 {
+	padding-bottom: 0px;
+	color: #ffffff;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size:xx-large;
+	align-items: center;
+	-webkit-text-stroke:.8px #222222;
+	text-shadow: 0px 0px 0px #000000;
+	border: 4px solid #222222;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-radius: 8px;
+	background-color: #000000;
+}
+/* Collapsed header (applies when user scrolls down) */
+h1.collapsed {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	transform: scale(0.60);
+	background-position: center center;
+}
+.collapsenav {
+	transform: translate(0, -200px);
+	transition: 400ms ease;
+	overflow: visible;
+}
+nav {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: scale(1);
+	transition: 400ms ease;
+    height: 25px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 0%;
+    width: 100%;
+    margin: 0 auto;
+    border-radius:2px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	overflow: visible;
+}
+button {
+	transform: scale(1);
+	transition: 400ms ease;
+    color:#000000;
+    background-color:#bbbbbb;
+    Width: 12%;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size:small;
+	text-align: center ;
+	-webkit-text-stroke:1px #222222;
+	border-radius: 8px;
+	margin-right:20px;
+	
+}
+button:hover {
+        box-shadow:0 8px 14px rgba(0, 0, 0, 0.3) ;
+		transition: 0.3s ease;
+    }
+
+nav.collapsenav {
+	height: 65px;
+}
+nav.collapsenav button {
+	height: 58px;
+	transform: translateY(-2px);
+	transition: 400ms ease;
+	font-size: medium;
+}
+div {
+	background-color:#ffffff;
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	-webkit-text-stroke:.8px #222222;
+	padding-top: 100px;
+	transform: scale(1);
+	transition: 400ms ease;
+}
+h2 {
+	color:#eeeeee;
+	border-bottom: 3px solid #222222;
+	height: 22px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	border-radius: 1px;
+	font-size: x-large;
+	padding-bottom: 10px;
+}
+.collapsenav2 {
+	transform: translate(0, -200px);
+	transition: 400ms ease;
+	overflow: visible;
+}
+div.collapsenav2 {
+	height: 1400px;
+}
+nav.collapsenav2 button {
+	transform: translateY(-2px);
+}

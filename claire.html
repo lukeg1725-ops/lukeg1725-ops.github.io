@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<title> index </title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1 class="secondheader">
+    <p class="secondh1"> Claire </p>
+</h1>
+	<nav>
+        <button onclick="document.location='index.html'"> Home Page </button>  
+        <button onclick="document.location='m+d.html'"> Mom + Dad </button>
+        <button onclick="document.location='j+s.html'"> Jayce, Samantha, + Brooks </button>
+		<button onclick="document.location='julia.html'"> Julia + Haley </button>
+        <button onclick="document.location='ag.html'"> Ana Grace </button>
+		<button onclick="document.location='luke.html'"> Luke </button>
+		<button onclick="document.location='joseph.html'"> Joseph </button>
+	</nav>
+<div> 
+		<h2> GALLERY </h2>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+<div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
+  data-link="https://photos.app.goo.gl/4wXdH4rNE6XHBqGJ8"
+  data-title="Claire · Jul 4, 2018 – Dec 8, 2025 📸"
+  data-description="Shared album · Tap to view!"
+  data-background-color="#ffffff">
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczP95N-HcB993rXINpM84PdV56m9OYL4xHssmNvSDjoyZtdRTDceM_dJvP9QmpoWoxVQ8xFIW1tAv7sYtlLsdF1XnJnWZ96HPerrZLWrTjsVVeRGo8I=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM1mLIJV7yR-2IrAzP5fmTg5vwZ4kNE7fanrThp83K361oR4EJdaQh1IfHd0CIjBxnOHV-lqyJTFOR8MHAGyPRGq48amJS2wt6vZ7eXse7_PPhVLV8=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOWLBlUpusZTnUX5z2_TpQ9mnsWNuf1b5xaIF_UXMYbCQF3dSBXUg9yrwXDfSzfndWuzcfl_ent_I0m62NIXC2exoeZnia6fLmjHhXFqwY2ka1i84o=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO3saGiQ01GSmqeO9BFSXoXjNJCLvV0Fu9kzSJKRTuYebrw88oWc_f3PvSwm78Cc2idH-iAIUmax6UjrRkMQmPPIUel6nxz6tRMGHWx3iDtipL2-xU=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMhLt0XycaU3_nEpwtpAy907gsVsl9gQb880O68DbmfaIjl19pFFOdNIU66WVclS8GaFxqFMK3svVNKRV7WjrMTxTP5syeJ5oaB15LseSDiB6U1sVg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPMdquQdAgQUssFsM2PEm9TEw1PjzEe6A1yjbyyi82dqejtoNGvao7Gzd-O3MEMABXnMvgBwdrwILlygsq7Vb5EJNQ2QF5v2d-zsUoIw6PilMlLnco=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNxFPExY7spVS8TEUByBzbGXtbWBZY86heseqzLL0XJ8_o7u1NzynSCK-UlCF_H4yOpqVjPvn1vNIFCXS0ms5hP-zjzgppbyCrxm1zl0Hb8LOl0fIo=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPGzGYP8xNaXB7GRBWd6OPfisEw0DW1omyFe0xovE5uy7zSfG2kQh5UpRdJLunQ4O1K6S37UDnmL_XeZEfatR3rDJybh9hqhd7hGul27G_KM6A01BA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMDCepkKDF6HCoMK3eAOPaXSUPI0xCXp7_rmcJgdAul7G_Ey_adjfL2MEmIOlHGivRr-mclUClfuzImbi8j-VNBLqv_olexArlIDOlBd9NFxYSONyU=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczODAtBPTbnl_EBrVBYty0sgQPpjDOT_fbObbORrJmFGkIkkIny3o-NJ84eDbfW8qIiE4GZd09F--MeqGUXajvIG8ck3Qsd5eKMn6b37hlmb5Muwg_o=w1920-h1080"></object>
+</div>
+
+<script>
+// Collapse header when scrolling down, expand when scrolling up
+(function(){
+	const header = document.querySelector('h1');
+	if (!header) return;
+	let lastY = window.pageYOffset || document.documentElement.scrollTop;
+
+	// Simple scroll-direction detector — toggles quickly and reliably
+	window.addEventListener('scroll', function(){
+		const currentY = window.pageYOffset || document.documentElement.scrollTop;
+		const delta = currentY - lastY;
+		if (delta > 2) { // scrolling down
+			header.classList.add('collapsed');
+		} else if (delta < -2) { // scrolling up
+			header.classList.remove('collapsed');
+		}
+		lastY = currentY <= 0 ? 0 : currentY;
+	}, {passive:true});
+})();
+</script>
+<script>
+// Collapse header when scrolling down, expand when scrolling up
+(function(){
+	const header = document.querySelector('nav');
+	if (!header) return;
+	let lastY = window.pageYOffset || document.documentElement.scrollTop;
+
+	// Simple scroll-direction detector — toggles quickly and reliably
+	window.addEventListener('scroll', function(){
+		const currentY = window.pageYOffset || document.documentElement.scrollTop;
+		const delta = currentY - lastY;
+		if (delta > 2) { // scrolling down
+			header.classList.add('collapsenav2');
+		} else if (delta < -2) { // scrolling up
+			header.classList.remove('collapsenav2');
+		}
+		lastY = currentY <= 0 ? 0 : currentY;
+	}, {passive:true});
+})();
+</script>
+<script>
+// Collapse header when scrolling down, expand when scrolling up
+(function(){
+	const header = document.querySelector('div');
+	if (!header) return;
+	let lastY = window.pageYOffset || document.documentElement.scrollTop;
+
+	// Simple scroll-direction detector — toggles quickly and reliably
+	window.addEventListener('scroll', function(){
+		const currentY = window.pageYOffset || document.documentElement.scrollTop;
+		const delta = currentY - lastY;
+		if (delta > 2) { // scrolling down
+			header.classList.add('collapsenav2');
+		} else if (delta < -2) { // scrolling up
+			header.classList.remove('collapsenav2');
+		}
+		lastY = currentY <= 0 ? 0 : currentY;
+	}, {passive:true});
+})();
+</script>
+</body>
+</html>
