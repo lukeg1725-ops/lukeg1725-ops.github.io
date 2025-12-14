@@ -128,7 +128,7 @@ h2 {
 	height: 22px;
 	width: 150px;
 	display: flex;
-	justify-content: center;
+	align-items: center;
 	border-radius: 1px;
 	font-size: x-large;
 	padding-bottom: 10px;
@@ -143,4 +143,8 @@ div.collapsenav2 {
 }
 nav.collapsenav2 button {
 	transform: translateY(-2px);
+}
+p {
+	display:flex;
+	align-items: center;
 }
