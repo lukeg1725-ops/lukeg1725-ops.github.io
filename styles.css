@@ -125,11 +125,10 @@ div {
 }
 h2 {
 	color:#eeeeee;
-	border-bottom: 2px solid #000000;
 	height: 22px;
 	width: 150px;
 	font-size: x-large;
-	padding-bottom: 10px;
+	padding-bottom: 4px;
 }
 .collapsenav2 {
 	transform: translate(0, -200px);
