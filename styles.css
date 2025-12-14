@@ -128,7 +128,7 @@ h2 {
 	height: 22px;
 	width: 150px;
 	font-size: x-large;
-	padding-bottom: 4px;
+	padding-bottom: 0px;
 }
 .collapsenav2 {
 	transform: translate(0, -200px);
@@ -144,4 +144,5 @@ nav.collapsenav2 button {
 p {
 	display:flex;
 	align-items: center;
+	width: 60%;
 }
