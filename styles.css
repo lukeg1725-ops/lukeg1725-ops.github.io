@@ -128,8 +128,6 @@ h2 {
 	border-bottom: 3px solid #222222;
 	height: 22px;
 	width: 150px;
-	display: flex;
-	align-items: center;
 	border-radius: 1px;
 	font-size: x-large;
 	padding-bottom: 10px;
