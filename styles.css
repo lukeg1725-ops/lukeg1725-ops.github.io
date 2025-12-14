@@ -15,6 +15,7 @@ h1 {
 	display:flex;
 	align-items:end;
 	justify-content: center;
+	flex-direction: row;
 	/* animate transform+padding (font-size keywords don't animate smoothly) */
 	transform-origin: center top;
 	transform: scale(1);
@@ -129,7 +130,7 @@ h2 {
 	height: 15px;
 	width: 150px;
 	font-size: x-large;
-	padding-bottom: 8px;
+	padding-bottom: 10px;
 }
 .collapsenav2 {
 	transform: translate(0, -200px);
