@@ -143,3 +143,6 @@ div.collapsenav2 {
 nav.collapsenav2 button {
 	transform: translateY(-2px);
 }
+p {
+	padding-top: 5px;
+}
