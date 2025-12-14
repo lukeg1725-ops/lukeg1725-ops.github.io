@@ -113,7 +113,7 @@ nav.collapsenav button {
 }
 div {
 	background-color:#ffffff;
-	width: 100%;
+	width: 60%;
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -125,7 +125,7 @@ div {
 }
 h2 {
 	color:#eeeeee;
-	height: 22px;
+	height: 15px;
 	width: 150px;
 	font-size: x-large;
 	padding-bottom: 0px;
