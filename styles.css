@@ -113,7 +113,7 @@ nav.collapsenav button {
 }
 div {
 	background-color:#ffffff;
-	width: 100%;
+	width: 60%;
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -125,10 +125,11 @@ div {
 }
 h2 {
 	color:#eeeeee;
-	height: 22px;
+	Border-bottom: 2px solid #222222;
+	height: 15px;
 	width: 150px;
 	font-size: x-large;
-	padding-bottom: 10px;
+	padding-bottom: 4px;
 }
 .collapsenav2 {
 	transform: translate(0, -200px);
