@@ -111,9 +111,6 @@ nav.collapsenav button {
 	transition: 400ms ease;
 	font-size: medium;
 }
-div.collapsenav{
-	width: 60%;
-}
 div {
 	background-color:#ffffff;
 	width: 60%;
