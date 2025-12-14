@@ -20,7 +20,7 @@ h1 {
 	transform: scale(1);
 	transition: padding 400ms ease, transform 400ms ease, background-position 400ms ease;
 	color:#eeeeee;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-size:xxx-large;
 	text-align: center;
 	height:470px;
