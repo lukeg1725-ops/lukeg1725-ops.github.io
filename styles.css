@@ -121,6 +121,7 @@ div {
 	padding-top: 100px;
 	transform: scale(1);
 	transition: 400ms ease;
+	text-align: center;
 }
 h2 {
 	color:#eeeeee;
